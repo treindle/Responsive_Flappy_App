@@ -6,3 +6,24 @@
    clear: both;
 }*/
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+html {
+  max-width: 500px
+  font-family: 'Open Sans', sans-serif;
+  color: darkgrey;
+  }
+
+@media only screen and (max-width: 40em) {
+
+}
+
+@media only screen and (min-width: 40.063em) and (max-width:60em) {
+
+
+}
+
+@media only screen and (min-width: 60.063em){
+
+}
+
