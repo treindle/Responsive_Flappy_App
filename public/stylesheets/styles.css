@@ -247,12 +247,13 @@ footer p {
     width: 734px;
     background-image: url("/images/scenery.png");
     background-size: cover;
+    padding-right: 30px;
 
   }
 
   .feature {
     display: inline-block;
-    padding-bottom:  
+    
     background: rgb(63,189,190);
     line-height: 300%;
     text-align: center;
@@ -261,7 +262,11 @@ footer p {
   .hamburger {
     display: none;
   }
-
+  
+  .feature ul li {
+    display: block;
+    padding-left: 30px;
+  }
 
 
   .logo_image { 
