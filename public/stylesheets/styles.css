@@ -1,5 +1,5 @@
 
-@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,500,900);
 
 .clearfix:after {
    content: " ";  /*Older browser do not support empty content*/
@@ -12,6 +12,7 @@
 html {
   font-family: 'Lato', sans-serif;
   text-transform: uppercase; 
+
 
 }
 
@@ -38,11 +39,15 @@ p {
 
 }
 
-header, nav{
+header, nav ul li a, .feature{
   color: rgb(63, 189, 190);
 
 }
-
+ 
+.logo_image, .logo {
+  float: left;
+  width: 250px;
+}
 
 span, footer p {
   color: white;
@@ -50,27 +55,7 @@ span, footer p {
 
 }
 
-.title_menu_bar, .footer_menu_bar {
-  background-image: url("/images/border.png"); 
-  background-repeat: repeat-x;
 
-}
-
-.logo_image, .logo {
-    float: left;
-    width: 300px;
-
-}
- 
-.title_menu {
-  float: right;
-
-}
-
-footer p {
-  text-align: center;
-
-}
 
 .feature ul li a{
   color: black;
@@ -82,60 +67,95 @@ footer p {
 
 }
 
+footer p, .title_menu_bar, .footer_menu_bar, .features {
+  background: rgb(32,34,38);
+
+
+}
+
+.title_menu_bar, .footer_menu_bar {
+  background-image: url("/images/border.png"); 
+  background-repeat: repeat-x;
+
+
+  
+}
+.title_menu ul li {
+  display: inline;
+  padding: 10px;
+
+}
+
+.feature li {
+  font-weight: 400;
+  list-style-position:inside;
+  border-top: 1px solid black;
+}
+
+.layout p {
+  font-weight: 900;
+  font-size: 24px;
+  padding: 30px;
+  text-align: justify;
+
+}
+.footer_menu{
+  font-weight: 400;
+  text-align: justify;
+  -webkit-column-count: 3;
+  padding: 30px 0 20px 20px; 
+  line-height: 200%;
+}
+
+footer p {
+  -webkit-column-count: 0;
+  text-align: center;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+
+
+
+
 
 @media only screen and (max-width: 40em) {
 
-  footer p, .feature, .title_menu_bar, .footer_menu_bar, .scenery, .features {
-    background: rgb(32,34,38);
 
-  }
 
   header .title_menu_bar {
     padding-top: 20px;
     height: 80px;
 
   }
-
+  .flappy {
+    margin-top: 20px;
+    font-size: 20px;
+  }
   .logo_image { 
     float: top-left;
     background-image: url("/images/logo.png");
-      height: 59px;
-      width: 100px;
+      height: 50px;
+      width: 80px;
     background-size: cover;
 
     }
+
   .scenery {
     background-image: url("/images/scenery.png");
     background-position: right;
     background-size: cover;
-  }
-
-
-  .title_menu_bar, .footer_menu_bar {
-    background-image: url("/images/border.png"); 
-    background-repeat: repeat-x;
-    display: block;
-    
-  }
-
-  .scenery {
-    background-image: url("/images/scenery.png");
-    position: left;
     height: 265px;
-    width: 400px;
+
 
   }
+  .feature {
 
-
-  .feature{
-  display: block;
   background: rgb(63,189,190);
   line-height: 300%;
   text-align: center;
   box-sizing: border-box;
-  border-style: 2px solid black;
 
-  }
+}
 
   .hamburger {
     float: right;
@@ -155,19 +175,9 @@ footer p {
     text-align: justify;
     padding-top: 20px;
     padding-left: 20px;
-    -webkit-column-count: 2;
-    column-count: 2;
+    width: 600px;
     line-height: 200%;
     color: rgb(63,189,190);
-  }
-  
-  .layout p {
-    
-    padding: 30px;
-    text-align: justify;
-    font-size: 17px; 
-    line-height: 100%
-    font-weight: 900px;
   }  
 
   footer p {
@@ -186,10 +196,87 @@ footer p {
 
 @media only screen and (min-width: 40.063em) and (max-width:60em) {
 
+  .scenery {
+    background-image: url("/images/scenery.png");
+    height: 266px;
+    width: 780px;
+    background-position: right;
+    background-size: cover;
 
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .flappy span {
+    display: block;
+  }
+
+  .logo_image { 
+    float: top-left;
+    background-image: url("/images/logo.png");
+      height: 50px;
+      width: 80px;
+    background-size: cover;
+
+  }
+  .feature {
+
+  background: rgb(63,189,190);
+  line-height: 300%;
+  text-align: center;
+  box-sizing: border-box;
+
+}
+
+  .title_menu_bar {
+    padding: 50px;
+  }
 }
 
 @media only screen and (min-width: 60.063em){
+  .scenery_and_features {
+    padding: 30px;
+    display: block;
 
+  }
+  .scenery {
+    display: inline-block;
+    height: 266px;
+    width: 734px;
+    background-image: url("/images/scenery.png");
+    background-size: cover;
+
+  }
+
+  .feature {
+    display: inline-block;
+    padding-bottom:  
+    background: rgb(63,189,190);
+    line-height: 300%;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+
+
+  .logo_image { 
+    float: top-left;
+    background-image: url("/images/logo.png");
+      height: 50px;
+      width: 80px;
+    background-size: cover;
+
+  }
+
+  .title_menu_bar {
+    padding: 50px;
+  }
 }
+
+
 
