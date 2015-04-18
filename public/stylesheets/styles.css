@@ -126,11 +126,7 @@ footer p {
     font-size: 20px;
   }
   .logo_image { 
-    float: top-left;
-    background-image: url("/images/logo.png");
-      height: 50px;
-      width: 80px;
-    background-size: cover;
+     
 
     }
 
