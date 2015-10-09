@@ -33,6 +33,7 @@ p {
 
 }
 
+
 header, nav ul li a, .feature{
   color: rgb(63, 189, 190);
 
@@ -50,11 +51,21 @@ span, footer p {
 }
 
 
+.scenery {
+  float: left;
+  width: 60%;
+}
+@media only screen and (min-width: 64.063em) {
 
+.feature {
+  height: 266px;  
+}
+ } /* min-width 1025px, large screens */
 .feature ul li a{
   color: black;
-
+  margin-right: 20px;
 }
+
 
 .footer_menu ul li a{
   color: rgb(63, 189, 190);
@@ -86,6 +97,8 @@ footer p, .title_menu_bar, .footer_menu_bar, .features {
   border-top: 1px solid black;
 }
 
+
+
 .layout p {
   font-weight: 900;
   font-size: 24px;
@@ -99,6 +112,7 @@ footer p, .title_menu_bar, .footer_menu_bar, .features {
   -webkit-column-count: 3;
   padding: 30px 0 20px 20px; 
   line-height: 200%;
+  width: 100%;
 }
 
 footer p {
@@ -107,7 +121,6 @@ footer p {
   font-weight: 400;
   padding-bottom: 30px;
 }
-
 
 
 
@@ -135,6 +148,7 @@ footer p {
     background-position: right;
     background-size: cover;
     height: 265px;
+    width: 100%;
 
 
   }
@@ -189,7 +203,7 @@ footer p {
   .scenery {
     background-image: url("/images/scenery.png");
     height: 266px;
-    width: 780px;
+    width: 100%;
     background-position: right;
     background-size: cover;
 
